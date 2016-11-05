@@ -1,12 +1,15 @@
 package nz.ac.aut.wjm2202.main;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import nz.ac.aut.wjm2202.one.GameOne;
+import nz.ac.aut.wjm2202.two.GameTwo;
 
 public class MainClass extends Application {
 
@@ -32,5 +35,22 @@ public class MainClass extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public static void runGameOne() {
+        Platform.runLater(new Runnable() {
+            public void run() {
+                //run another application from here
+                new GameOne().start(new Stage());
+            }
+        });
+    }
+    public static void runGameTwo() {
+        Platform.runLater(new Runnable() {
+            public void run() {
+                //run another application from here
+                new GameTwo().start(new Stage());
+            }
+        });
     }
 }

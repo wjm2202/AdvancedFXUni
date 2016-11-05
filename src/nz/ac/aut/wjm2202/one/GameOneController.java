@@ -1,4 +1,4 @@
-package nz.ac.aut.wjm2202.main;
+package nz.ac.aut.wjm2202.one;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
