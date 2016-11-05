@@ -14,8 +14,10 @@ public class MainClass extends Application {
         //test github is up and working
         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
         primaryStage.setTitle("AdvancedFX");
-        primaryStage.setScene(new Scene(root, 1280, 700));
-        primaryStage.getIcons().add(new Image("/Resources/JavaIcon.gif"));
+        Scene scene = new Scene(root,1200.0,700.0);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image("/Resources/Pics/JavaIcon.gif"));
         primaryStage.show();
     }
 
