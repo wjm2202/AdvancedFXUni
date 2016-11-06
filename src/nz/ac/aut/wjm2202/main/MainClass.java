@@ -9,6 +9,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import nz.ac.aut.wjm2202.one.GameOne;
+import nz.ac.aut.wjm2202.three.GameThree;
 import nz.ac.aut.wjm2202.two.GameTwo;
 
 public class MainClass extends Application {
@@ -50,6 +51,14 @@ public class MainClass extends Application {
             public void run() {
                 //run another application from here
                 new GameTwo().start(new Stage());
+            }
+        });
+    }
+    public static void runGameThree() {
+        Platform.runLater(new Runnable() {
+            public void run() {
+                //run another application from here
+                new GameThree().start(new Stage());
             }
         });
     }

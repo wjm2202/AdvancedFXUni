@@ -55,5 +55,9 @@ public class MainController {
         System.out.println("button two pressed");
         MainClass.runGameTwo();
     }
+    public void pressGameThree(ActionEvent event2)throws IOException{
+        System.out.println("button two pressed");
+        MainClass.runGameThree();
+    }
 
 }
