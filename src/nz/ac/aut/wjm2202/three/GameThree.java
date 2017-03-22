@@ -22,7 +22,6 @@ import nz.ac.aut.wjm2202.three.java.Levels;
 import nz.ac.aut.wjm2202.three.java.ModelImporter;
 import nz.ac.aut.wjm2202.three.java.Wheelie;
 
-import java.util.logging.Level;
 
 public class GameThree extends Application {
 
@@ -99,6 +98,8 @@ public class GameThree extends Application {
 
         Scene scene = new Scene(pane);
         scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());      //add css to ui
+        stage.initStyle(javafx.stage.StageStyle.TRANSPARENT);
+
         stage.getIcons().add(new Image("/Resources/pics/javaicon.gif"));                               //set stage icon
         stage.setScene(scene);                                                     // Add the Scene to the Stage
         stage.setTitle("Wheelie");                                   // Set the Title of the Stage
